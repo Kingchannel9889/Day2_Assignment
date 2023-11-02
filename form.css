@@ -80,3 +80,35 @@ input[type="submit"] {
     border-color: white;
     min-width: 300px;
   }
+
+  .btn{
+    height:5vh;
+    width: 20vh;
+    font-size: 15px;
+    background-color: var(--background-color);
+    outline:none;
+    position: relative;
+    cursor: pointer;
+    float:right;
+
+    --background-color:#d3a8a8;
+    --border-size: 2px;
+}
+
+.btn.btn-border-pop::before{
+    content: '';
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    border: var(--border-size) solid var(--background-color);
+    transition: top left, right, bottom, 100ms ease-in-out;
+}
+
+.btn.btn-border-pop:hover::before,.btn.btn-border-pop:focus::before{
+    top:calc(var(--border-size)* -2);
+    left:calc(var(--border-size)* -2);
+    right:calc(var(--border-size)* -2);
+    bottom:calc(var(--border-size)* -2);
+}
