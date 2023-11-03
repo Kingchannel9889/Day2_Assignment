@@ -15,6 +15,17 @@
     height: 50px;
 }
 
+.Home-table{
+    border-collapse: collapse;
+    width: 1000px;
+    margin: 50px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 50px;
+    border-color:black;
+  
+}
 .title{
     font-size: 50px;
     background: -webkit-linear-gradient(#7d7c9e, #9f80e9);
