@@ -12,7 +12,7 @@
 }
 .container1{
     background: radial-gradient(circle, rgb(38, 139, 143) 0%, rgb(138, 135, 160) 100%);
-    height: 50px;
+    height: 65px;
 }
 
 .Home-table{
@@ -42,19 +42,17 @@
 
 nav ul{
     float:right;
-    margin-right:500px;
+    margin-right:300px;
     margin-top: 10px;
 }
 
 nav ul li{
     display:inline-block;
-    margin: 0 50px;
+    margin: 0 70px;
     
 }
-nav ul li a{
-    font-size: 25px;
-    margin-left: 100px
-}
+
+
 
 
 /*I want the hover seperately*/
@@ -64,9 +62,43 @@ nav ul li a{
     margin-top: 15px;
 } */
 
-.home{
-    font-size:30px;
+
+.btn{
+    height:5vh;
+    width: 20vh;
+    font-size: 25px;
+    background-color: var(--background-color);
+    outline:none;
+    position: relative;
+    cursor: pointer;
+
+    --background-color:#d3a8a8;
+    --border-size: 2px;
 }
+
+.btn.btn-border-pop::before{
+    content: '';
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    border: var(--border-size) solid var(--background-color);
+    transition: top left, right, bottom, 100ms ease-in-out;
+}
+
+.btn.btn-border-pop:hover::before,.btn.btn-border-pop:focus::before{
+    top:calc(var(--border-size)* -2);
+    left:calc(var(--border-size)* -2);
+    right:calc(var(--border-size)* -2);
+    bottom:calc(var(--border-size)* -2);
+}
+
+
+
+
+
+
 
 
 .circle1{
