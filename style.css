@@ -43,13 +43,13 @@
 
 nav ul{
     float:right;
-    margin-right:300px;
-    margin-top: 10px;
+    margin-right:200px;
+    margin-top: 5px;
 }
 
 nav ul li{
     display:inline-block;
-    margin: 0 70px;
+    margin: 0px 50px;
     
 }
 
